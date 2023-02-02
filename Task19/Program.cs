@@ -21,15 +21,11 @@ int GetNumber(string message)
 }
 bool Palindrom(int num)
 {
-    if ((num / 10000 == num%10) && ((num /1000)%10 == (num%100)/10)) return true;
+    if ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10)) return true;
     else return false;
 }
 
-int number=GetNumber("Введите 5-значное число:");
-bool result=Palindrom(number);
-if (result==true) Console.WriteLine($"число {number} является палиндромом");
+int number = GetNumber("Введите 5-значное число:");
+bool result = Palindrom(number);
+if (result == true) Console.WriteLine($"число {number} является палиндромом");
 else Console.WriteLine($"число {number} не является палиндромом");
-//Console.WriteLine(number/10000);
-//Console.WriteLine(number%10);
-//Console.WriteLine((number/1000)%10);
-//Console.WriteLine((number%100)/10);
